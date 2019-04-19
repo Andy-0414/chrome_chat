@@ -13,7 +13,9 @@ socket.on('getMsg', data => {
     var div = document.createElement('div')
     div.classList.add('message')
     div.innerText = `${data.name} : ${data.msg}`
+    if(chatBox.childElementCount > 40) chatBox.removeChild(chatBox.children[0])
     chatBox.appendChild(div)
+    chatBox.scrollTo(0,chatBox.scrollHeight)
 })
 messageInput.addEventListener('keypress', (e) => {
     if (e.keyCode == 13) sendMsg()
