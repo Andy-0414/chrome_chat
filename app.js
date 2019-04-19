@@ -3,7 +3,6 @@ const app = express()
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-// chatServer
 io.on('connection', (socket) => {
     socket.on('sendMsg',data=>{
         io.emit('getMsg',data)
