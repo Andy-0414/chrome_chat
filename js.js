@@ -1,4 +1,4 @@
-const socket = io('localhost:3000');
+const socket = io(); // 주소 넣어줘야함
 const chatBox = document.getElementById('chatBox')
 const nameInput = document.getElementById('nameInput')
 const messageInput = document.getElementById('messageInput')
