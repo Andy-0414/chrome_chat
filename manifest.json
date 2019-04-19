@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Sunrin Chat",
+    "version": "0.5",
+    "default_locale": "ko",
+    "description": "Sunrin chat",
+    "icons": {
+        "36":"icon36.png"
+    },
+    "permissions": [
+        "activeTab", "http://*/*", "https://*/*"
+    ],
+    "browser_action": {
+        "default_icon": "icon36.png",
+        "default_popup": "html.html"
+    }
+}
